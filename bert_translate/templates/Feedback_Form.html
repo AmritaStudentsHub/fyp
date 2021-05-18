@@ -72,7 +72,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Feedback
       </li>
       <li class="form-line jf-required" data-type="control_fullname" id="id_8">
         <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
-          Question:
+          Question 1:
           <span class="form-required">
             *
           </span>
@@ -80,17 +80,17 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Feedback
         <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
           <div data-wrapper-react="true">
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              {%if question%}
-              <input type="text" id="first_8" name="question" class="form-textbox validate[required]" size="10" value="{{question}}" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              {%if question1%}
+              <input type="text" id="first_8" name="question1" class="form-textbox validate[required]" size="10" value="{{question1}}" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
               {%else%}
-              <input type="text" id="first_8" name="question" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              <input type="text" id="first_8" name="question1" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
               {%endif%}
             </span>
             
           </div>
         </div>
       </li>
-      {%if ans%}
+      {%if ans1%}
       <li class="form-line jf-required" data-type="control_fullname" id="id_8">
         <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
           Answer:
@@ -98,10 +98,50 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Feedback
         <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
           <div data-wrapper-react="true">
             <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
-              <label class="form-label form-label-top form-label-auto" for="first_8" id="sublabel_8_first" style="min-height:13px" aria-hidden="false"> {{ans}} </label>
+              <label class="form-label form-label-top form-label-auto" for="first_8" id="sublabel_8_first" style="min-height:13px" aria-hidden="false"> {{ans1}} </label>
             </span>
           </div>
         </div>
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          translation: '{{ans1t}}'
+        </label>
+      </li>
+      {%endif%}
+      <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          Question 2:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              {%if question2%}
+              <input type="text" id="first_8" name="question2" class="form-textbox validate[required]" size="10" value="{{question2}}" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              {%else%}
+              <input type="text" id="first_8" name="question2" class="form-textbox validate[required]" size="10" value="" data-component="first" aria-labelledby="label_8 sublabel_8_first" required="" />
+              {%endif%}
+            </span>
+            
+          </div>
+        </div>
+      </li>
+      {%if ans2%}
+      <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          Answer:
+        </label>
+        <div id="cid_8" class="form-input-wide jf-required" data-layout="full">
+          <div data-wrapper-react="true">
+            <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+              <label class="form-label form-label-top form-label-auto" for="first_8" id="sublabel_8_first" style="min-height:13px" aria-hidden="false"> {{ans2}} </label>
+            </span>
+          </div>
+        </div>
+        <label class="form-label form-label-top form-label-auto" id="label_8" for="first_8">
+          translation: '{{ans2t}}'
+        </label>
       </li>
       {%endif%}
       <li class="form-line" data-type="control_button" id="id_2">
@@ -110,7 +150,7 @@ JotForm.paymentExtrasOnTheFly([null,{"name":"clickTo","qid":"1","text":"Feedback
             <button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
               Submit
             </button>
-            {%if ans%}
+            {%if ans1%}
             <input type="button" onclick="location.href='http://localhost:8000/';" value="Reset" class="form-submit-button submit-button jf-form-buttons jsTest-submitField"/>
             {%endif%}
           </div>
